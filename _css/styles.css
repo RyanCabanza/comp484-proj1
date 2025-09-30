@@ -1,0 +1,215 @@
+body{
+	font-family: "Geologica", sans-serif;
+	background-color: #eee;
+}
+div{
+	/*outline: solid red 1px;*/
+	margin: 0px auto;
+}
+#container{
+	width: 1366px;
+	margin: 0px auto;
+	background-color: #fff;
+}
+nav{
+	background-color: #82d0d2;
+}
+#navTable, tr, td{
+	/*outline: solid red 1px;*/
+	padding: 10px 20px;
+}
+#navTable{
+	width: 1366px;
+	table-layout: fixed;
+	img{
+		width: 285px;
+		height: auto;
+	}
+}
+#navLinks{
+	margin-left: auto;
+	margin-right: 0;
+}
+h1, h2, h3{
+	color: #543134;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 400;
+}
+a:hover{
+	color: #2ea6ba;
+}
+.spacer{
+	padding-top: 200px;
+}
+.spacer2{
+	padding-top: 100px;
+}
+footer{
+	border-top: 2px solid #82d0d2;
+	text-align: center;
+	width: 1366px;
+	margin: 0px auto;
+	font-weight: 200;
+	padding-bottom: 5px;
+	background-color: #fff;
+}
+.pageHeader{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+.tableAlignTop{
+	vertical-align: top;
+}
+button{ 
+	margin-top: 15px; 
+	padding: 10px 20px; 
+	background: #82d0d2;
+	color: white; border: none; 
+	font-weight: bold;
+	cursor: pointer; 
+	border-radius: 25px;
+}
+button:hover { 
+	background: #2ea6ba; 
+}
+.accessFont{
+	font-weight: 400;
+	color: #e1b78e;
+}
+
+
+/*-----------INDEX PAGE CSS-----------*/
+#banner{
+	height: 500px;
+	background-image: url("../_images/MW-BannerImage.jpg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img{
+		width: 600px;
+		height: auto;
+		filter: drop-shadow(0px 35px 100px #ccc);
+	}
+}
+#intro{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	text-align: center;
+	p{
+		width: 600px;
+		margin: 0 auto;
+	}
+}
+#galaxy, #ourMission{
+	padding-left: 150px;
+	padding-right: 150px;
+}
+#galaxy{
+	margin-bottom: 200px;
+	h2{
+		padding-top: 100px;
+	}
+	img{
+		float: left;
+		margin-right: 100px;
+		width: 400px;
+		height: auto;
+	}
+}
+#ourMission{
+	h2{
+		padding-top: 150px;
+	}
+	img{
+		float: right;
+		margin-left: 100px;
+		width: 400px;
+		height: auto;
+	}
+}
+/*------------------------------------*/
+
+
+/*-----------MENU PAGE CSS------------*/
+#menu{
+	table{
+		text-align: center;
+		table-layout: fixed;
+		width: 1280px;
+		margin: 0 auto;
+		border-collapse: collapse;
+		img{
+			padding-top: 20px;
+			width: 200px;
+			height: auto;
+		}
+		p{
+			padding-bottom: 20px;
+			font-weight: 400;
+			color: #e1b78e;
+		}
+	}
+}
+tr.menuDivider td{
+	border-top: solid 2px #82d0d2;
+}
+/*------------------------------------*/
+
+
+/*---------LOCATIONS PAGE CSS---------*/
+#locations{
+	table{
+		margin: 0 auto;
+		border-collapse: collapse;
+		border-top: solid 2px #82d0d2;
+		img{
+			/*padding-top: 20px;*/
+			width: 740px;
+			height: auto;
+		}
+		iframe{
+			padding: 20px;
+		}
+	}
+}
+/*------------------------------------*/
+
+
+
+/*----------CAREERS PAGE CSS----------*/
+#careers{
+	table{
+		padding-top: 40px;
+		margin: 0 auto;
+		table-layout: fixed;
+		width: 1280px;
+	}
+}
+#formContainer{
+	padding-left: 40px;
+}
+fieldset{ 
+	border: 1px solid #ccc; 
+	padding: 15px; 
+	margin-bottom: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+label{ 
+	display: block; 
+	font-weight: bold;
+	padding: 25px 0px 10px 0px;
+	color: #543134;
+}
+output { 
+	display: inline-block; 
+	margin-top: 15px; 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+}
+/*------------------------------------*/
