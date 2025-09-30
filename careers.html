@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Milky Way Tea Station</title>
+		<link rel="icon" href="_images/favicon.png">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="_css/styles.css">
+
+		<!-- FONT PACKAGES -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/qdx6pfj.css">
+	</head>
+	<body>
+	<!-- ----------------------------------------
+	*         THIS PAGE IS WHERE I USED         *
+	*         <button> <label> <output>         *           
+	*              name for form                *
+	-------------------------------------------->
+		<div id="container">
+			<nav>
+				<table id="navTable">
+					<tr>
+						<td id="navLogo"><a href="index.html"><img src="_images/MW-NavLogo.svg"></a></td>
+						<td>
+							<table id="navLinks">
+								<td><a href="index.html"><h5>HOME</h5></a></td>
+								<td><a href="menu.html"><h5>MENU</h5></a></td>
+								<td><a href="locations.html"><h5>LOCATIONS</h5></a></td>
+								<td><a href="careers.html"><h5>CAREERS</h5></a></td>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</nav>
+			<div id="careers">
+				<table>
+					<tr>
+						<td class="tableAlignTop">
+							<h1>Join the team!</h1>
+							<p>We believe our team members are the stars that make our galaxy shine. We are dedicated to building a respectful, collaborative environment where every individual is valued and supported.</p>
+							<p>If you’re passionate about great service and want to grow with a team that values dedication and teamwork, we invite you to apply and become part of our journey.</p>
+						</td>
+						<td>
+							<div id="formContainer">
+								<form id="jobForm" oninput="summary.value = position.value + ' | ' + hours.value + ' hrs/week'">
+								    <fieldset>
+								    	<legend><h3>Personal Information</h3></legend>
+								    	<label for="fullName">Full Name</label>
+								    	<input id="fullName" name="fullName" type="text" placeholder="Your name" required>
+
+										<label for="email">Email</label>
+										<input id="email" name="email" type="email" placeholder="you@example.com" required>
+								    </fieldset>
+
+								    <fieldset>
+								    	<legend><h3>Position Details</h3></legend>
+									    <label for="position">Position Applied For</label>
+									    <select id="position" name="position" required>
+									    	<option value="" disabled selected>Select a position</option>
+									    	<option value="barista">Barista</option>
+									    	<option value="prep">Prep Staff</option>
+									    	<option value="cashier">Cashier</option>
+									    	<option value="shift-lead">Shift Lead</option>
+									    	<option value="manager">Manager</option>
+									    </select>
+
+
+									    <label for="hours">Hours per Week</label>
+									    <input id="hours" name="hours" type="number" min="5" max="40" placeholder="20" required>
+								    </fieldset>
+								</form>
+
+								<!-- Summary fieldset and submission button are outside of <form> to demonstrate the usage of "form" attribute -->
+
+								<fieldset>
+								    <legend><h3>Summary (Preview)</h3></legend>
+								    <output name="summary" for="position hours" form="jobForm">
+								    	Your selection will appear here
+								    </output>
+							    </fieldset>
+
+							    <button type="submit" form="jobForm">Submit Application</button>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="spacer2">
+				
+			</div>
+		</div>
+		<footer>
+			<p>Designed and developed by Ryan Cabanza</p>
+		</footer>
+	</body>
+</html>
