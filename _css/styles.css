@@ -85,9 +85,9 @@ button:hover {
 /*-----------INDEX PAGE CSS-----------*/
 #banner{
 	height: 500px;
-	background-image: url("../_images/MW-BannerImage.jpg");
-	background-size: cover;
-	background-position: center;
+	background:
+    url("../_images/MW-BannerImage.jpg") 
+    no-repeat fixed 0px 0px / 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
